@@ -1,0 +1,229 @@
+
+.catalog{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    overflow: auto;
+    flex-wrap: nowrap;
+}
+.product_fill{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    width: 55vw;
+    justify-content: center;
+
+}
+.side_fill{
+    display: flex;
+    flex-direction: row;
+    width: 230px;
+    margin-top: 40px;
+    box-shadow: 0 0 5px;
+    height: 75vh;
+    padding: 0.5vw;
+
+    text-decoration: none;
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.15em;
+    padding-bottom: 40px;
+
+    color:#B24201;
+}
+.side_fill a{
+    text-decoration: none;
+    color: #000000;
+}
+.side_fill a:hover{
+    color:#B24201;
+    text-decoration: underline;
+}
+.side_fill ul{
+    width: 80%;
+    padding: 8px;
+    overflow: auto;
+}
+.product_card{
+    background-color: #B24201;
+    box-shadow:0px 4px 4px;
+    margin-top: 40px;
+    padding: 20px 0px 0px 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.div_in_bas{
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 35px 0;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1000;
+}
+.modal .modal_content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    z-index: 99999;
+}
+.modal .modal_content .close_modal_window {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.kat_line{
+    height: 72vh;
+    width: 1px;
+    background-color: #000000;
+    margin: 1vw;
+}
+.product_card-info{
+    border-bottom: 1px solid #000000;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.15em;
+    padding-bottom: 40px;
+}
+.info-op{
+    margin: 5px 0;
+}
+.info-price{
+    margin: 10px 0 5px 0;
+}
+.form-in_bas{
+    border:  none;
+    outline: none;
+    background-color: #B24201;
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.15em;
+    padding-bottom: 40px;
+
+}
+.info-pic{
+    width: 21vw;
+}
+a.idTop {
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    right: 0;
+    background: #FCF4F4;
+
+    color: #000000;
+    padding: 10px;
+    margin: 5px 15px 15px 5px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    text-decoration: none;
+}
+a.idTop:hover {
+    opacity: 1;
+}
+.img{
+    height: 19vw;
+    width: auto;
+}
+.adv_pic{
+    height: 8vw ;
+    width: auto;
+}
+.side_fill_right{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.side_fill_right_adv{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.side_fill_right p {
+    color: #0F0600;
+}
+.pag{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px 20px;
+
+}
+.pag nav{
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+}
+.pag ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0;
+    width: 15vw;
+    justify-content: space-between;
+
+}
+.page-link{
+    text-decoration: none;
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 40px;
+    color: #B24201;
+}
+.poisk_form{
+    display: flex;
+flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 80%;
+
+}
+.poisk_form input{
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    color: #B24201;
+    margin: 5px;
+    width: 40%;
+}
+@media (max-width:850px){
+    .side_fill_right{
+        display: none;
+    }
+    .catalog{
+        flex-wrap: wrap;
+    }
+}

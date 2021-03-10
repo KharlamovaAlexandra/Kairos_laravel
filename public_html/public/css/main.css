@@ -1,0 +1,245 @@
+html, body {
+    width: 100vw;
+    background-color: #FFFFFF;
+}
+
+header{
+    padding-right:  5.7%;
+    padding-left:   5.7%;
+}
+.h1{
+    text-decoration: none;
+    font-family: Yanone Kaffeesatz;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 76px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    color: #0F0600;
+    white-space:nowrap;
+}
+.logo-tel_number{
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 38px;
+    white-space:nowrap;
+    margin-left:10px;
+}
+main{
+    padding-right:  5.7%;
+    padding-left:   5.7%;
+    height: auto;
+
+}
+footer{
+    padding-right:  5.7%;
+    padding-left:   5.7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 167px;
+}
+.rights{
+    display: flex;
+    align-items: center;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding-right:  22.5%;
+    padding-left:   22.5%;
+    flex-wrap: wrap;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.title-logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    width:34vw;
+    justify-content: space-between;
+}
+nav > a{
+    text-decoration: none;
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    letter-spacing: 0.15em;
+    padding-bottom: 40px;
+
+    color: #B24201;
+}
+nav  a:hover{
+    color: #B24201;
+    text-decoration: underline;
+}
+
+footer{
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 38px;
+    text-decoration-line: underline;
+
+    color: #B24201;
+}
+contacts{
+    width: 262px;
+}
+.contacts-number{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 262px;
+    flex-wrap: nowrap;
+}
+.contacts-email{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+hr{
+    color: #B24201;
+}
+.user_status{
+    width: 295px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 0.15em;
+    color: #000000;
+    flex-wrap: wrap;
+}
+
+.user_status > a {
+    text-decoration: none;
+    color: #000000;
+}
+.user_status-ok{
+    display: flex;
+    flex-direction: column;
+}
+.ok-acc,
+.ok-aut,
+.ok-name{
+
+    text-decoration: none;
+    color: #000000;
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 38px;
+}
+li{
+    list-style-type: none;
+}
+.ok-name:hover .name-sub {
+    display: block;
+}
+.name-sub{
+    display: none;
+}
+
+
+.submenu {
+    display: none;
+    background: #FFFEFE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+ul li:hover .submenu {
+    display: block;
+}
+.m_ic{
+    display: none;
+    color: #000000;
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 38px;
+}
+
+@media (max-width:850px){
+    .title-logo{
+
+        width:auto;
+    }
+
+    .title{
+        flex-wrap: wrap;
+    }
+    .m_ic{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    .men_icon:hover nav{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .men_icon:active nav{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .contacts-number{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .contacts-email{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+    .rights{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+@media (max-width:420px){
+    .title-logo{
+        flex-wrap: wrap;
+        width:auto;
+    }
+    .user_status{
+        width: auto;
+        flex-wrap: wrap;
+    }
+}
